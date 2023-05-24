@@ -11,7 +11,7 @@ services:
     build: ./infra/php
     volumes:
       - ./src/adas:/var/www/html
-      - vendor-store:/var/www/html/adas/vendor
+      - vendor-store:/var/www/html/vendor
     depends_on:
       - db
 
