@@ -1,7 +1,7 @@
 FROM php:8.1-fpm
 
 RUN apt-get update \
-  && apt-get install -y unzip libpq-dev \
+  && apt-get install -y unzip libpq-dev git \
   && pecl install xdebug \
   && docker-php-ext-enable xdebug \
   && docker-php-ext-install pgsql pdo_pgsql opcache
